@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Inter", system-ui, sans-serif;
+    background: #f0f4ff;
+    color: #0f172a;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background: rgba(255,255,255,0.72);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+  .gradient-page {
+    background: linear-gradient(135deg, #eff6ff 0%, #f0fdf4 50%, #f5f3ff 100%);
+  }
+  .hero-grad {
+    background: linear-gradient(135deg, #1e40af 0%, #0f766e 50%, #1d4ed8 100%);
+  }
+  .card-lift {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .card-lift:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(37,99,235,0.12);
+  }
+  .btn-glow:hover {
+    box-shadow: 0 0 18px rgba(37,99,235,0.35);
+  }
+}
+
+@keyframes pulse-cross {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.18); }
+}
+.pulse-cross { animation: pulse-cross 2.2s ease-in-out infinite; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-10px); }
+}
+.float { animation: float 4s ease-in-out infinite; }
+
+/* Custom scrollbar */
+::-webkit-scrollbar       { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
