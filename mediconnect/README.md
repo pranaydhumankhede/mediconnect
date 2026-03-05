@@ -149,4 +149,7 @@ mediconnect/
 
 ---
 
-*Built with ❤️ — MediConnect Health Pvt. Ltd. © 2025*
+❤️ Author
+Pranay Dhumankhede
+Computer Science Engineering Student
+Full-Stack Developer

@@ -1,13 +1,19 @@
 # Node
-frontend/node_modules
+node_modules/
 
 # Python
+venv/
 __pycache__/
+*.pyc
 
 # Environment variables
 .env
 backend/.env
+frontend/.env
 
 # Build folders
-dist
-build
+dist/
+build/
+
+# OS files
+.DS_Store

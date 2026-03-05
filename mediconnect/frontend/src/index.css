@@ -52,3 +52,9 @@
 ::-webkit-scrollbar       { width: 4px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+
+
+.card:hover {
+ transform: translateY(-6px);
+ box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}

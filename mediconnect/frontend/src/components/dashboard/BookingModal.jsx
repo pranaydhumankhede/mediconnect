@@ -143,7 +143,8 @@ export default function BookingModal({ onClose, onBook, preselectedDoctor }) {
                     <label className="block text-sm font-semibold text-slate-700 mb-1.5">
                       Date
                     </label>
-                    <input type="date"
+                    <input type="d
+                    ate"
                       className="w-full px-4 py-3 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
                       value={form.date}
                       onChange={set("date")}
